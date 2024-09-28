@@ -1,0 +1,25 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+<div class = "container">
+	<h1> About Stegano </h1>
+
+	<!-- Tool description -->
+	<p> This is a tool for encoding and decoding messages through images created by <i>Toma Ioan Dumitrescu, 314CA,
+	2023 </i>. If the user wants more information about steganography, he can click on Stegano button on the top menu
+	bar to get redirected to a more detailed page. The tool only applies an algorithm of encoding / decoding the
+	messages in / from the image. The user should choose whether he wants to encode or to decode an image, click
+	on the top menu bar on the specific option and then the user will get to a formular. He will have to complete the
+	fields as indicated, the images accepted being only in <b>binary files with png format, no alpha channel </b>.
+	Additionaly, the user can view the last encoded/decoded image (also available in the menu options). As no login
+	is required, the user can view only the last image encoded / decoded that may not be sent by him. In this version
+	of program, no security measures are take for that as <b>it was not requested</b>. In other versions, the last 1000
+	encoded / decoded images can be stored and for each the program will generate a password. When the user types the
+	password, the program will match with the image in the corresponding 1000 length array. In a more advanced version,
+	there is an authentication model where the last image corresponds to the session user is assigned to. </p>
+
+	<img src="{{url_for('static', filename='weak_steganography.png')}}" style="padding-left: 15px; padding-top: 5px;">
+</div>
+
+{% endblock %}

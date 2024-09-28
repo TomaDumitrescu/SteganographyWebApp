@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+<div class = "container">
+	<b> Upload the image and the message in the specified format: </b>
+	<br>
+	<!-- multipart form data template -->
+	<form action="/encode" method="post" enctype="multipart/form-data" style=" margin:15px;">
+		<span class="input-group-text" id="inputGroup-sizing-default">Message to encode</span>
+		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby=
+			  "inputGroup-sizing-default" name="save_encode_message">
+		<input type="file" name="image"/>
+		<button class="btn btn-primary" type="submit">Submit</button>
+	</form>
+</div>
+
+{% endblock %}

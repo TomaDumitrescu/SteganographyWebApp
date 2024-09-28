@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+<div class = "container">
+	<b> Choose if you want the last encoded/decoded image:</b>
+	<br>
+	<!-- Bootstrap buttons -->
+	<div class="d-grid gap-2 d-md-block">
+		<button class="btn btn-primary" type="button" onclick="custom_redirect(0)">
+		<!-- text-decoration:none means removing default underline for design purposes -->
+		<a href="{{url_for('encoded')}}" style="color: white; text-decoration: none;">Encoded</a></button>
+		<button class="btn btn-primary" type="button" onclick="custom_redirect(1)">
+		<a href="{{url_for('decoded')}}" style="color: white; text-decoration: none;">Decoded</a></button>
+	</div>
+</div>
+
+{% endblock %}

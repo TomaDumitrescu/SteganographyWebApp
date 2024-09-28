@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+<div class = "container">
+	<b> Upload the encoded image: </b>
+	<br>
+	<!-- file form template, button with Bootstrap 5 designs -->
+	<form action="/decode" method="post" enctype="multipart/form-data" style="margin:15px;">
+		<input type="file" name="image"/>
+		<button class="btn btn-primary" type="submit">Submit</button>
+	</form>
+	<!-- Print the decoded message -->
+	<b> Decoded message: </b>
+	<p>{{ message }}</p>
+</div>
+
+{% endblock %}

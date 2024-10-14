@@ -1,5 +1,6 @@
 Copyright 2022 Toma-Ioan Dumitrescu
 
+
 Stegano is a tool for encoding messages in images and decoding photos (where the message exists). It was created using Python for backend and html, css for frontend (Bootstrap 5 design links).
 
 Requirements: python 3, html, css, IDE, Flask, numpy, PIL, io, Bootstrap 5
